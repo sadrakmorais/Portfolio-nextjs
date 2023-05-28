@@ -8,6 +8,7 @@ const BarlowSemiBold = Barlow_Semi_Condensed({
 });
 
 import { Header } from "@/components/Header";
+import { CurriculumVitae } from "@/components/CurriculumVitae";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <section id="container-global">
         <Header />
+        <CurriculumVitae />
       </section>
     </>
   );

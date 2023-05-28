@@ -57,5 +57,19 @@ export default createGlobalStyle`
     
   }
 
+  #container-global{
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 3rem;
+
+    @media (max-width: 750px) {
+      padding: 0 2rem;
+    
+     }
+       @media (max-width: 450px) {
+        padding: 0 1rem;
+       }
+  }
+
   
 `;

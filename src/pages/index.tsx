@@ -20,8 +20,16 @@ export default function Home() {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <section id="container-global">
-        <Header />
-        <CurriculumVitae />
+        <Header
+          logoDevName="SadrakMorais"
+          email="sadraksdk1@gmail.com"
+          linkGithub="https://github.com/sadrakmorais"
+          githubUser="sadrakmorais"
+        />
+        <CurriculumVitae
+          nameFile="CV - Sadrak Morais.pdf"
+          pathFile="assets/my-cv.pdf"
+        />
       </section>
     </>
   );

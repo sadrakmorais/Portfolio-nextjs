@@ -1,13 +1,13 @@
 import * as S from "./CurriculumVitae.styles";
 
-export function CurriculumVitae() {
+type CurriculumVitaeProps = {
+  nameFile: string;
+  pathFile: string;
+};
+export function CurriculumVitae({ nameFile, pathFile }: CurriculumVitaeProps) {
   return (
     <S.Wrapper>
-      <S.CurriculumButton
-        download="CV - Sadrak Morais.pdf"
-        target="_blank"
-        href="assets/my-cv.pdf"
-      >
+      <S.CurriculumButton download={nameFile} target="_blank" href={pathFile}>
         <span>CURRÍCULO</span>
       </S.CurriculumButton>
     </S.Wrapper>

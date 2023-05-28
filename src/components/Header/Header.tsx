@@ -1,22 +1,33 @@
 import * as S from "./Header.styles";
 import { AiFillGithub } from "react-icons/ai";
 import { MdAlternateEmail } from "react-icons/md";
-import Link from "next/link";
 
-export function Header() {
+type HeaderProps = {
+  linkGithub: string;
+  email: string;
+  logoDevName: string;
+  githubUser: string;
+};
+export function Header({
+  logoDevName,
+  email,
+  linkGithub,
+  githubUser,
+}: HeaderProps) {
   return (
     <S.Wrapper>
       <h1>
-        SadrakMorais<b>.tsx</b>
+        {logoDevName}
+        <b>.tsx</b>
       </h1>
       <section>
-        <S.ContactField href="https://github.com/sadrakmorais" target="_blank">
+        <S.ContactField href={linkGithub} target="_blank">
           <AiFillGithub />
-          <p>/sadrakmorais</p>
+          <p>/{githubUser}</p>
         </S.ContactField>
-        <S.ContactField href="mailto:sadraksdk1@gmail.com">
+        <S.ContactField href={`mailto:${email}`}>
           <MdAlternateEmail />
-          <p>sadraksdk1@gmail.com</p>
+          <p>{email}</p>
         </S.ContactField>
       </section>
     </S.Wrapper>

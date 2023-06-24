@@ -9,6 +9,7 @@ const BarlowSemiBold = Barlow_Semi_Condensed({
 
 import { Header } from "@/components/Header";
 import { CurriculumVitae } from "@/components/CurriculumVitae";
+import { AboutMe } from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           nameFile="CV - Sadrak Morais.pdf"
           pathFile="assets/my-cv.pdf"
         />
+        <AboutMe />
       </section>
     </>
   );

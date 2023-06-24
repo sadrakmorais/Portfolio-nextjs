@@ -28,13 +28,13 @@ export const CurriculumButton = styled.a`
 
   &::before {
     content: "";
-    width: 20%;
+    width: 100%;
     height: 1px;
     background: #5cc4c4;
   }
   &::after {
     content: "";
-    width: 100%;
+    width: 20%;
     height: 1px;
     background: #5cc4c4;
   }
